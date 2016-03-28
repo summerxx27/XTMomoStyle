@@ -1,0 +1,10 @@
+PODS:
+  - ZLSwipeableView (0.0.8)
+
+DEPENDENCIES:
+  - ZLSwipeableView
+
+SPEC CHECKSUMS:
+  ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
+
+COCOAPODS: 0.39.0
