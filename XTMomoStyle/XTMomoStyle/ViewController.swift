@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  XTMomoStyle
@@ -7,13 +8,6 @@
 //
 
 import UIKit
-enum HandleDirectionType{
-    case HandleDirectionOn
-    case HandleDirectionDown
-    case HandleDirectionLeft
-    case HandleDirectionRight
-}
-
 class ViewController: UIViewController, ZLSwipeableViewDelegate, ZLSwipeableViewDataSource {
     let titles = [
     "Turquoise",
@@ -37,42 +31,23 @@ class ViewController: UIViewController, ZLSwipeableViewDelegate, ZLSwipeableView
     "Concrete",
     "Asbestos"
     ]
-    let colors = [
-        "Turquoise",
-        "Green Sea",
-        "Emerald",
-        "Nephritis",
-        "Peter River",
-        "Belize Hole",
-        "Amethyst",
-        "Wisteria",
-        "Wet Asphalt",
-        "Midnight Blue",
-        "Sun Flower",
-        "Orange",
-        "Carrot",
-        "Pumpkin",
-        "Alizarin",
-        "Pomegranate",
-        "Clouds",
-        "Silver",
-        "Concrete",
-        "Asbestos"
-    ]
-    var colorIndex = 0
+    var index = 0
     var xtSwipeableView: ZLSwipeableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        xtSwipeableView?.frame = CGRectMake(15, 15, self.view.frame.size.width - 30, self.view.frame.size.height - 30)
-//        
-//        xtSwipeableView?.delegate = self
-        xtSwipeableView?.dataSource = self
-//        xtSwipeableView?.translatesAutoresizingMaskIntoConstraints = false
+        self.view.backgroundColor = UIColor.lightGrayColor()
+        xtSwipeableView = ZLSwipeableView.init()
+        xtSwipeableView!.frame = CGRectMake(55, 110, self.view.frame.size.width - 110, self.view.frame.size.height - 220)
+        xtSwipeableView!.delegate = self
+        xtSwipeableView!.dataSource = self
+        xtSwipeableView!.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(xtSwipeableView!)
-        
-        
+        self.setButton()
+    }
+    func setButton()
+    {
         var items = ["上", "下", "左", "右"]
         for i in 0...3{
             let btn = UIButton.init(type: UIButtonType.Custom)
@@ -82,28 +57,26 @@ class ViewController: UIViewController, ZLSwipeableViewDelegate, ZLSwipeableView
             btn.addTarget(self, action: "handle:", forControlEvents: UIControlEvents.TouchUpInside)
             btn.tag = i
         }
-
     }
     func handle(btn: UIButton)
     {
-        
         let tagType = btn.tag
         switch tagType{
         case 0:
-            self.xtSwipeableView?.swipeTopViewToUp()
+            xtSwipeableView!.swipeTopViewToUp()
         case 1:
-            self.xtSwipeableView?.swipeTopViewToDown()
+            xtSwipeableView!.swipeTopViewToDown()
         case 2:
-            self.xtSwipeableView?.swipeTopViewToLeft()
+            xtSwipeableView!.swipeTopViewToLeft()
         case 3:
-            self.xtSwipeableView?.swipeTopViewToRight()
+            xtSwipeableView!.swipeTopViewToRight()
         default:
             print("....")
         }
     }
     
     override func viewDidLayoutSubviews() {
-        self.xtSwipeableView?.loadViewsIfNeeded()
+        xtSwipeableView!.loadViewsIfNeeded()
     }
     
     // ZLSwipeableViewDelegate
@@ -129,17 +102,77 @@ class ViewController: UIViewController, ZLSwipeableViewDelegate, ZLSwipeableView
     
     // ZLSwipeableViewDataSource
     func nextViewForSwipeableView(swipeableView: ZLSwipeableView!) -> UIView! {
-        if self.colorIndex >= self.titles.count {
-            self.colorIndex = 0;
+        if self.index >= self.titles.count {
+            self.index = 0
         }
-        // ++
         let view = CardView.init(frame: swipeableView.bounds)
         view.backgroundColor = UIColor.purpleColor()
-        view.labelTitle.text = self.titles[colorIndex];
-        self.colorIndex++;
-        return view;
+        view.textLabel?.text = self.titles[index]
+        view .initWithClosure(addressThatTakesAClosure)
+        self.index++
+        return view
     }
-    
+    func addressThatTakesAClosure(string:String) ->Void{
+        print("\(string)")
+    }
+    class CardView: UIView {
+        ///
+        typealias sendValueClosure = (string:String)->Void
+        /// 声明一个Closure(闭包)
+        var myClosure:sendValueClosure?
+        // 下面这个方法需要传入上个界面的someFunctionThatTakesAClosure函数指针
+        func initWithClosure(closure:sendValueClosure?){
+            myClosure = closure
+        }
+        ///
+        var imagesView: UIImageView?
+        var textLabel : UILabel?
+        var btn: UIButton?
+        ///
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            self.setView(frame)
+        }
+        required init?(coder aDecoder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        /// setView
+        func setView(frame: CGRect){
+            // Shadow
+            self.layer.shadowColor = UIColor.lightGrayColor().CGColor
+            self.layer.shadowOpacity = 0.33
+            self.layer.shadowOffset = CGSizeMake(0, 1.5)
+            self.layer.shadowRadius = 4.0
+            self.layer.shouldRasterize = true
+            self.layer.rasterizationScale = UIScreen.mainScreen().scale
+            
+            // Corner Radius
+            self.layer.cornerRadius = 10.0
+            
+            // Custom view
+            imagesView = UIImageView.init(frame: CGRectMake(5, 5, self.frame.size.width - 10, self.frame.size.height / 2))
+            imagesView!.backgroundColor = UIColor.whiteColor()
+            self.addSubview(imagesView!)
+            
+            
+            textLabel = UILabel.init(frame: CGRectMake(20, imagesView!.frame.size.height + 10, 120, 20))
+            textLabel!.backgroundColor = UIColor.lightGrayColor()
+            self.addSubview(textLabel!)
+            
+            btn = UIButton.init(type: UIButtonType.Custom)
+            btn?.setTitle("BUTTON", forState: UIControlState.Normal)
+            btn?.frame = CGRectMake(20, (textLabel?.frame.origin.y)! + 20 + 10, 100, 50)
+            self.addSubview(btn!)
+            btn?.addTarget(self, action: "btnClick", forControlEvents: UIControlEvents.TouchUpInside)
+            
+        }
+        func btnClick()
+        {
+            if myClosure != nil{
+                self.myClosure!(string: "hello World")
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
