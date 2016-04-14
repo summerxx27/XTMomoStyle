@@ -16,7 +16,6 @@
 		BC8DDE7D1CC0EAF70000CB79 /* XTMomoStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE7C1CC0EAF70000CB79 /* XTMomoStyleTests.swift */; };
 		BC8DDE881CC0EAF70000CB79 /* XTMomoStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE871CC0EAF70000CB79 /* XTMomoStyleUITests.swift */; };
 		BC8DDE981CC0EBC00000CB79 /* View1Controlle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE971CC0EBC00000CB79 /* View1Controlle.m */; };
-		BC8DDE9B1CC0FC660000CB79 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE9A1CC0FC660000CB79 /* CardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		BC8DDE951CC0EBC00000CB79 /* XTMomoStyle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XTMomoStyle-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC8DDE961CC0EBC00000CB79 /* View1Controlle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1Controlle.h; sourceTree = "<group>"; };
 		BC8DDE971CC0EBC00000CB79 /* View1Controlle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1Controlle.m; sourceTree = "<group>"; };
-		BC8DDE991CC0FC660000CB79 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
-		BC8DDE9A1CC0FC660000CB79 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		F84149D96ADDCC6F54856DC5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,8 +116,6 @@
 		BC8DDE661CC0EAF70000CB79 /* XTMomoStyle */ = {
 			isa = PBXGroup;
 			children = (
-				BC8DDE991CC0FC660000CB79 /* CardView.h */,
-				BC8DDE9A1CC0FC660000CB79 /* CardView.m */,
 				BC8DDE671CC0EAF70000CB79 /* AppDelegate.swift */,
 				BC8DDE691CC0EAF70000CB79 /* ViewController.swift */,
 				BC8DDE6B1CC0EAF70000CB79 /* Main.storyboard */,
@@ -345,7 +340,6 @@
 			files = (
 				BC8DDE981CC0EBC00000CB79 /* View1Controlle.m in Sources */,
 				BC8DDE6A1CC0EAF70000CB79 /* ViewController.swift in Sources */,
-				BC8DDE9B1CC0FC660000CB79 /* CardView.m in Sources */,
 				BC8DDE681CC0EAF70000CB79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
