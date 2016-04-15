@@ -100,7 +100,7 @@
                                                                     swipeableView)]];
     
     
-    // like and no like
+    // `1` `2` `3` `4`
     NSArray *items = @[@"😢", @"😄", @"😢", @"😄"];
     for (NSInteger i = 0; i < 4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -108,7 +108,6 @@
         button.frame = CGRectMake(50 + 60 * i, self.view.frame.size.height - 90, 50, 50);
         [button setTitle:items[i] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(handle:) forControlEvents:UIControlEventTouchUpInside];
-        button.tag = i;
         
     }
     
@@ -188,6 +187,7 @@
     CardView *view = [[CardView alloc] initWithFrame:swipeableView.bounds];
     // colors
     view.backgroundColor = [self colorForName:self.colors[self.colorIndex]];
+    view.backgroundColor = [UIColor purpleColor];
     // titles
     view.labelTitle.text = self.titles[self.colorIndex];
     // ++
@@ -202,7 +202,6 @@
     NSString *selectorString = [NSString stringWithFormat:@"flat%@Color", sanitizedName];
     Class colorClass = [UIColor class];
     return [colorClass performSelector:NSSelectorFromString(selectorString)];
-//    return nil;
 }
 
 

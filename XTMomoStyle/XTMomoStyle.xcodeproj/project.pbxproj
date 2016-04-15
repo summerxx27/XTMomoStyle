@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		135F623BE72E3F23628730DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3FDCA1E7A43B98198E02FD /* libPods.a */; };
+		BC8DDE681CC0EAF70000CB79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE671CC0EAF70000CB79 /* AppDelegate.swift */; };
+		BC8DDE6A1CC0EAF70000CB79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE691CC0EAF70000CB79 /* ViewController.swift */; };
+		BC8DDE6D1CC0EAF70000CB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8DDE6B1CC0EAF70000CB79 /* Main.storyboard */; };
+		BC8DDE6F1CC0EAF70000CB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8DDE6E1CC0EAF70000CB79 /* Assets.xcassets */; };
+		BC8DDE721CC0EAF70000CB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8DDE701CC0EAF70000CB79 /* LaunchScreen.storyboard */; };
+		BC8DDE7D1CC0EAF70000CB79 /* XTMomoStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE7C1CC0EAF70000CB79 /* XTMomoStyleTests.swift */; };
+		BC8DDE881CC0EAF70000CB79 /* XTMomoStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE871CC0EAF70000CB79 /* XTMomoStyleUITests.swift */; };
+		BC8DDE981CC0EBC00000CB79 /* View1Controlle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE971CC0EBC00000CB79 /* View1Controlle.m */; };
+		BC8DDE9B1CC0FC660000CB79 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DDE9A1CC0FC660000CB79 /* CardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8DDE791CC0EAF70000CB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8DDE5C1CC0EAF70000CB79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8DDE631CC0EAF70000CB79;
+			remoteInfo = XTMomoStyle;
+		};
+		BC8DDE841CC0EAF70000CB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8DDE5C1CC0EAF70000CB79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8DDE631CC0EAF70000CB79;
+			remoteInfo = XTMomoStyle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14617F284BC38E70A6C8F8D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3B3FDCA1E7A43B98198E02FD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8DDE641CC0EAF70000CB79 /* XTMomoStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTMomoStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8DDE671CC0EAF70000CB79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC8DDE691CC0EAF70000CB79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC8DDE6C1CC0EAF70000CB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8DDE6E1CC0EAF70000CB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8DDE711CC0EAF70000CB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8DDE731CC0EAF70000CB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8DDE781CC0EAF70000CB79 /* XTMomoStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTMomoStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8DDE7C1CC0EAF70000CB79 /* XTMomoStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTMomoStyleTests.swift; sourceTree = "<group>"; };
+		BC8DDE7E1CC0EAF70000CB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8DDE831CC0EAF70000CB79 /* XTMomoStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTMomoStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8DDE871CC0EAF70000CB79 /* XTMomoStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTMomoStyleUITests.swift; sourceTree = "<group>"; };
+		BC8DDE891CC0EAF70000CB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8DDE951CC0EBC00000CB79 /* XTMomoStyle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XTMomoStyle-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC8DDE961CC0EBC00000CB79 /* View1Controlle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1Controlle.h; sourceTree = "<group>"; };
+		BC8DDE971CC0EBC00000CB79 /* View1Controlle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1Controlle.m; sourceTree = "<group>"; };
+		BC8DDE991CC0FC660000CB79 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		BC8DDE9A1CC0FC660000CB79 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		F84149D96ADDCC6F54856DC5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8DDE611CC0EAF70000CB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135F623BE72E3F23628730DB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE751CC0EAF70000CB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE801CC0EAF70000CB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54FC141C2973CD67A444CA88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FDCA1E7A43B98198E02FD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC8DDE5B1CC0EAF70000CB79 = {
+			isa = PBXGroup;
+			children = (
+				BC8DDE661CC0EAF70000CB79 /* XTMomoStyle */,
+				BC8DDE7B1CC0EAF70000CB79 /* XTMomoStyleTests */,
+				BC8DDE861CC0EAF70000CB79 /* XTMomoStyleUITests */,
+				BC8DDE651CC0EAF70000CB79 /* Products */,
+				D5693500EB701342F6F86565 /* Pods */,
+				54FC141C2973CD67A444CA88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8DDE651CC0EAF70000CB79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DDE641CC0EAF70000CB79 /* XTMomoStyle.app */,
+				BC8DDE781CC0EAF70000CB79 /* XTMomoStyleTests.xctest */,
+				BC8DDE831CC0EAF70000CB79 /* XTMomoStyleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8DDE661CC0EAF70000CB79 /* XTMomoStyle */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DDE991CC0FC660000CB79 /* CardView.h */,
+				BC8DDE9A1CC0FC660000CB79 /* CardView.m */,
+				BC8DDE671CC0EAF70000CB79 /* AppDelegate.swift */,
+				BC8DDE691CC0EAF70000CB79 /* ViewController.swift */,
+				BC8DDE6B1CC0EAF70000CB79 /* Main.storyboard */,
+				BC8DDE6E1CC0EAF70000CB79 /* Assets.xcassets */,
+				BC8DDE701CC0EAF70000CB79 /* LaunchScreen.storyboard */,
+				BC8DDE731CC0EAF70000CB79 /* Info.plist */,
+				BC8DDE961CC0EBC00000CB79 /* View1Controlle.h */,
+				BC8DDE971CC0EBC00000CB79 /* View1Controlle.m */,
+				BC8DDE951CC0EBC00000CB79 /* XTMomoStyle-Bridging-Header.h */,
+			);
+			path = XTMomoStyle;
+			sourceTree = "<group>";
+		};
+		BC8DDE7B1CC0EAF70000CB79 /* XTMomoStyleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DDE7C1CC0EAF70000CB79 /* XTMomoStyleTests.swift */,
+				BC8DDE7E1CC0EAF70000CB79 /* Info.plist */,
+			);
+			path = XTMomoStyleTests;
+			sourceTree = "<group>";
+		};
+		BC8DDE861CC0EAF70000CB79 /* XTMomoStyleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DDE871CC0EAF70000CB79 /* XTMomoStyleUITests.swift */,
+				BC8DDE891CC0EAF70000CB79 /* Info.plist */,
+			);
+			path = XTMomoStyleUITests;
+			sourceTree = "<group>";
+		};
+		D5693500EB701342F6F86565 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F84149D96ADDCC6F54856DC5 /* Pods.debug.xcconfig */,
+				14617F284BC38E70A6C8F8D7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8DDE631CC0EAF70000CB79 /* XTMomoStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8DDE8C1CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyle" */;
+			buildPhases = (
+				5224E594AB2D2211343356B4 /* Check Pods Manifest.lock */,
+				BC8DDE601CC0EAF70000CB79 /* Sources */,
+				BC8DDE611CC0EAF70000CB79 /* Frameworks */,
+				BC8DDE621CC0EAF70000CB79 /* Resources */,
+				7A75FA079A0DF50102D5820D /* Embed Pods Frameworks */,
+				923141552313EBE30C6873BD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTMomoStyle;
+			productName = XTMomoStyle;
+			productReference = BC8DDE641CC0EAF70000CB79 /* XTMomoStyle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC8DDE771CC0EAF70000CB79 /* XTMomoStyleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8DDE8F1CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyleTests" */;
+			buildPhases = (
+				BC8DDE741CC0EAF70000CB79 /* Sources */,
+				BC8DDE751CC0EAF70000CB79 /* Frameworks */,
+				BC8DDE761CC0EAF70000CB79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8DDE7A1CC0EAF70000CB79 /* PBXTargetDependency */,
+			);
+			name = XTMomoStyleTests;
+			productName = XTMomoStyleTests;
+			productReference = BC8DDE781CC0EAF70000CB79 /* XTMomoStyleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC8DDE821CC0EAF70000CB79 /* XTMomoStyleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8DDE921CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyleUITests" */;
+			buildPhases = (
+				BC8DDE7F1CC0EAF70000CB79 /* Sources */,
+				BC8DDE801CC0EAF70000CB79 /* Frameworks */,
+				BC8DDE811CC0EAF70000CB79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8DDE851CC0EAF70000CB79 /* PBXTargetDependency */,
+			);
+			name = XTMomoStyleUITests;
+			productName = XTMomoStyleUITests;
+			productReference = BC8DDE831CC0EAF70000CB79 /* XTMomoStyleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8DDE5C1CC0EAF70000CB79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "夏天";
+				TargetAttributes = {
+					BC8DDE631CC0EAF70000CB79 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BC8DDE771CC0EAF70000CB79 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BC8DDE631CC0EAF70000CB79;
+					};
+					BC8DDE821CC0EAF70000CB79 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BC8DDE631CC0EAF70000CB79;
+					};
+				};
+			};
+			buildConfigurationList = BC8DDE5F1CC0EAF70000CB79 /* Build configuration list for PBXProject "XTMomoStyle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8DDE5B1CC0EAF70000CB79;
+			productRefGroup = BC8DDE651CC0EAF70000CB79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8DDE631CC0EAF70000CB79 /* XTMomoStyle */,
+				BC8DDE771CC0EAF70000CB79 /* XTMomoStyleTests */,
+				BC8DDE821CC0EAF70000CB79 /* XTMomoStyleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8DDE621CC0EAF70000CB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DDE721CC0EAF70000CB79 /* LaunchScreen.storyboard in Resources */,
+				BC8DDE6F1CC0EAF70000CB79 /* Assets.xcassets in Resources */,
+				BC8DDE6D1CC0EAF70000CB79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE761CC0EAF70000CB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE811CC0EAF70000CB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5224E594AB2D2211343356B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A75FA079A0DF50102D5820D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923141552313EBE30C6873BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8DDE601CC0EAF70000CB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DDE981CC0EBC00000CB79 /* View1Controlle.m in Sources */,
+				BC8DDE6A1CC0EAF70000CB79 /* ViewController.swift in Sources */,
+				BC8DDE9B1CC0FC660000CB79 /* CardView.m in Sources */,
+				BC8DDE681CC0EAF70000CB79 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE741CC0EAF70000CB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DDE7D1CC0EAF70000CB79 /* XTMomoStyleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DDE7F1CC0EAF70000CB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DDE881CC0EAF70000CB79 /* XTMomoStyleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8DDE7A1CC0EAF70000CB79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8DDE631CC0EAF70000CB79 /* XTMomoStyle */;
+			targetProxy = BC8DDE791CC0EAF70000CB79 /* PBXContainerItemProxy */;
+		};
+		BC8DDE851CC0EAF70000CB79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8DDE631CC0EAF70000CB79 /* XTMomoStyle */;
+			targetProxy = BC8DDE841CC0EAF70000CB79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC8DDE6B1CC0EAF70000CB79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8DDE6C1CC0EAF70000CB79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8DDE701CC0EAF70000CB79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8DDE711CC0EAF70000CB79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC8DDE8A1CC0EAF70000CB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8DDE8B1CC0EAF70000CB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8DDE8D1CC0EAF70000CB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84149D96ADDCC6F54856DC5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = XTMomoStyle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XTMomoStyle/XTMomoStyle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC8DDE8E1CC0EAF70000CB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14617F284BC38E70A6C8F8D7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = XTMomoStyle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XTMomoStyle/XTMomoStyle-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BC8DDE901CC0EAF70000CB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTMomoStyleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTMomoStyle.app/XTMomoStyle";
+			};
+			name = Debug;
+		};
+		BC8DDE911CC0EAF70000CB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTMomoStyleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTMomoStyle.app/XTMomoStyle";
+			};
+			name = Release;
+		};
+		BC8DDE931CC0EAF70000CB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTMomoStyleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTMomoStyle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BC8DDE941CC0EAF70000CB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTMomoStyleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTMomoStyleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTMomoStyle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8DDE5F1CC0EAF70000CB79 /* Build configuration list for PBXProject "XTMomoStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8DDE8A1CC0EAF70000CB79 /* Debug */,
+				BC8DDE8B1CC0EAF70000CB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8DDE8C1CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8DDE8D1CC0EAF70000CB79 /* Debug */,
+				BC8DDE8E1CC0EAF70000CB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8DDE8F1CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8DDE901CC0EAF70000CB79 /* Debug */,
+				BC8DDE911CC0EAF70000CB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8DDE921CC0EAF70000CB79 /* Build configuration list for PBXNativeTarget "XTMomoStyleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8DDE931CC0EAF70000CB79 /* Debug */,
+				BC8DDE941CC0EAF70000CB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8DDE5C1CC0EAF70000CB79 /* Project object */;
+}
