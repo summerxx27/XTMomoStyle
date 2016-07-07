@@ -3,7 +3,6 @@
 
 切换视图, 上下左右滑动效果.
 
-效果展示1
-http://github.com/zhangjingwang1993/XSmomoStyle/raw/master/images.png
-效果展示2
-http://github.com/zhangjingwang1993/XSmomoStyle/raw/master/images1.png
+你可以看这篇文章: 
+
+简书: [http://www.jianshu.com/p/734962c9bbed](http://www.jianshu.com/p/734962c9bbed)
