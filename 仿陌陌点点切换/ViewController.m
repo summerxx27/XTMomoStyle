@@ -12,10 +12,10 @@
 #import "CardView.h"
 
 @interface ViewController ()<ZLSwipeableViewDelegate, ZLSwipeableViewDataSource>
+
 @property (nonatomic, strong) NSArray *colors;
 @property (nonatomic) NSUInteger colorIndex;
 @property (nonatomic, strong) NSArray *titles;
-
 
 @end
 
@@ -24,8 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    self.navigationController.navigationBar.hidden = YES;
-    // Do any additional setup after loading the view, typically from a nib.
+
     self.colorIndex = 0;
     self.colors = @[
                     @"Turquoise",
@@ -112,6 +111,7 @@
     }
     
 }
+
 // up down left right
 - (void)handle:(UIButton *)sender
 {
@@ -134,6 +134,7 @@
             break;
     }
 }
+
 - (ZLSwipeableView *)swipeableView
 {
     if (_swipeableView == nil) {
@@ -141,45 +142,51 @@
     }
     return _swipeableView;
 }
-- (void)viewDidLayoutSubviews {
+
+- (void)viewDidLayoutSubviews
+{
     [self.swipeableView loadViewsIfNeeded];
 }
 
 #pragma mark - ZLSwipeableViewDelegate
-
 - (void)swipeableView:(ZLSwipeableView *)swipeableView
          didSwipeView:(UIView *)view
-          inDirection:(ZLSwipeableViewDirection)direction {
+          inDirection:(ZLSwipeableViewDirection)direction
+{
     NSLog(@"did swipe in direction: %zd", direction);
 }
 
-- (void)swipeableView:(ZLSwipeableView *)swipeableView didCancelSwipe:(UIView *)view {
+- (void)swipeableView:(ZLSwipeableView *)swipeableView didCancelSwipe:(UIView *)view
+{
     NSLog(@"did cancel swipe");
 }
 
 - (void)swipeableView:(ZLSwipeableView *)swipeableView
   didStartSwipingView:(UIView *)view
-           atLocation:(CGPoint)location {
+           atLocation:(CGPoint)location
+{
     NSLog(@"did start swiping at location: x %f, y %f", location.x, location.y);
 }
 
 - (void)swipeableView:(ZLSwipeableView *)swipeableView
           swipingView:(UIView *)view
            atLocation:(CGPoint)location
-          translation:(CGPoint)translation {
+          translation:(CGPoint)translation
+{
     NSLog(@"swiping at location: x %f, y %f, translation: x %f, y %f", location.x, location.y,
           translation.x, translation.y);
 }
 
 - (void)swipeableView:(ZLSwipeableView *)swipeableView
     didEndSwipingView:(UIView *)view
-           atLocation:(CGPoint)location {
+           atLocation:(CGPoint)location
+{
     NSLog(@"did end swiping at location: x %f, y %f", location.x, location.y);
 }
 
 #pragma mark - ZLSwipeableViewDataSource
-
-- (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView {
+- (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView
+{
     if (self.colorIndex >= self.colors.count || self.colorIndex >= self.titles.count) {
         self.colorIndex = 0;
     }
@@ -195,20 +202,12 @@
     return view;
 }
 
-#pragma mark - () - color
-
-- (UIColor *)colorForName:(NSString *)name {
+#pragma mark - color
+- (UIColor *)colorForName:(NSString *)name
+{
     NSString *sanitizedName = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSString *selectorString = [NSString stringWithFormat:@"flat%@Color", sanitizedName];
     Class colorClass = [UIColor class];
     return [colorClass performSelector:NSSelectorFromString(selectorString)];
 }
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
